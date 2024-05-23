@@ -1,56 +1,7 @@
 # C-project
 
-#include<iostream>
 
-using namespace std;
 
-int main(){
-char startValue;
-char choiceAgain;
-double onlineShopping(void);
-startLevel:
-cout<<"Please press s to start Shopping"<<endl;
-start:
-cin>>startValue;
-if(startValue=='s' || startValue=='S'){
-double totalAmount=onlineShopping();
-cout<<"Total BillAmount is "<<totalAmount<<endl;
-shopAgain:
-cout<<"Do you want shopping again, y or n"<<endl;
-cin>>choiceAgain;
-if(choiceAgain=='y' || choiceAgain=='Y'){
-goto startLevel;
-}
-else if(choiceAgain=='n' || choiceAgain=='N'){
-cout<<"Thanks for shopping"<<endl;
-}
-else {
-cout<<"You have entered wrong option, please type again"<<endl;
-goto shopAgain;
-}
-}
-else{
-cout<<"You have entered wrong option, please s"<<endl;
-goto start;
-}
-}
-
-double onlineShopping(){
-    char choice;
-    char item;
-    int quantity;
-    double billAmount=0;
-    itemLevel:
-    cout<<"****************Welcome to Online Shopping***************"<<endl;
-    cout<<"----------Please follow the instructions------------"<<endl;
-    cout<<"(1) Please enter m to order mobile phones"<<endl;
-    cout<<"(2) Please enter l to order laptops"<<endl;
-    cout<<"(3) Please enter d to order desktops"<<endl;
-    cout<<"(4) Please enter s to order Speaker"<<endl;
-    cout<<"(5) Please enter h to order Headphone"<<endl;
-    cin>>choice;
-
-//**********************************Mobile*******************************//
 if(choice=='m' || choice=='M'){
 mobileLevel:
 cout<<"Mobile details"<<endl;
